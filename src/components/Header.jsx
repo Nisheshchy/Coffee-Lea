@@ -24,6 +24,9 @@ export default function Header() {
         <a href="#featured" className="transition hover:text-[#f9e8dc]">
           Menu
         </a>
+        <a href="#/about" className="transition hover:text-[#f9e8dc]">
+          About
+        </a>
         <a href="#/stories" className="transition hover:text-[#f9e8dc]">
           Story
         </a>
