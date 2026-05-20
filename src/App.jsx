@@ -10,6 +10,7 @@ import DailyDealsSection from "./components/DailyDealsSection";
 import Footer from "./components/Footer";
 import StoriesList from "./pages/StoriesList";
 import StoryDetail from "./pages/StoryDetail";
+import About from "./pages/About";
 
 function HomeContent() {
   return (
@@ -43,6 +44,10 @@ function App() {
 
   // simple router: #/stories and #/stories/:id
   const renderRoute = () => {
+    if (route.startsWith("#/about")) {
+      return <About />;
+    }
+
     if (route.startsWith("#/stories")) {
       const parts = route.replace("#", "").split("/");
       const id = parts.length >= 3 ? parts[2] : null;
