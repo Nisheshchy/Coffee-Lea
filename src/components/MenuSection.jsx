@@ -1,7 +1,7 @@
 /** @format */
 
 import { useEffect, useRef, useState } from "react";
-import { ShoppingCart, ArrowRight } from "lucide-react";
+import { ShoppingCart } from "lucide-react";
 import { gsap } from "gsap";
 import { menuProducts } from "../data/coffeeData";
 
@@ -18,13 +18,20 @@ export default function MenuSection() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from(sectionRef.current.querySelectorAll(".menu-card"), {
-        y: 32,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.1,
-        ease: "power3.out",
-      });
+      gsap.fromTo(
+        sectionRef.current.querySelectorAll(".menu-card"),
+        {
+          y: 32,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          stagger: 0.05,
+          ease: "power3.out",
+        }
+      );
     }, sectionRef);
 
     return () => ctx.revert();

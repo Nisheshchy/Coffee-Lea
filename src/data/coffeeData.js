@@ -119,6 +119,106 @@ export const menuProducts = [
     image:
       "https://images.unsplash.com/photo-1514432324607-2e467f4af445?auto=format&fit=crop&w=800&q=80",
   },
+  {
+    id: 11,
+    title: "Ristretto",
+    category: "Espresso",
+    price: "$3.25",
+    description:
+      "A concentrated shot of espresso with a sweet, intense flavor profile.",
+    image:
+      "https://images.unsplash.com/photo-1510707577719-ee7c213a4936?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 12,
+    title: "Cortado",
+    category: "Espresso",
+    price: "$4.25",
+    description:
+      "Equal parts espresso and warm silky milk, perfectly balanced.",
+    image:
+      "https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 13,
+    title: "Affogato",
+    category: "Specialty",
+    price: "$6.00",
+    description:
+      "A decadent scoop of creamy vanilla gelato drowned in a hot shot of espresso.",
+    image:
+      "https://images.unsplash.com/photo-1594911774802-8822a707cbb3?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 14,
+    title: "Iced Caramel Latte",
+    category: "Iced",
+    price: "$5.25",
+    description:
+      "Chilled espresso with vanilla, cold milk, and a luxurious caramel drizzle.",
+    image:
+      "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 15,
+    title: "Cold Brew Latte",
+    category: "Iced",
+    price: "$5.00",
+    description:
+      "Our slow-steeped cold brew cut with cold milk over ice.",
+    image:
+      "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 16,
+    title: "Matcha Espresso Fusion",
+    category: "Specialty",
+    price: "$6.25",
+    description:
+      "Layered organic matcha green tea, creamy milk, and a bold shot of espresso.",
+    image:
+      "https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 17,
+    title: "Irish Coffee",
+    category: "Specialty",
+    price: "$6.50",
+    description:
+      "Smooth hot coffee spiked with non-alcoholic Irish cream syrup and whipped cream.",
+    image:
+      "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 18,
+    title: "Vanilla Sweet Cream Cold Brew",
+    category: "Iced",
+    price: "$5.50",
+    description:
+      "Slow-steeped cold brew topped with a float of handcrafted vanilla sweet cream.",
+    image:
+      "https://images.unsplash.com/photo-1517701550927-30cf4ba54d4d?auto=format&fit=crop&w=800&q=80&sat=-15",
+  },
+  {
+    id: 19,
+    title: "Spanish Latte",
+    category: "Milk Coffee",
+    price: "$5.25",
+    description:
+      "An espresso latte sweetened with a touch of condensed milk for a velvety finish.",
+    image:
+      "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 20,
+    title: "Turkish Coffee",
+    category: "Espresso",
+    price: "$4.50",
+    description:
+      "Traditionally brewed fine coffee grounds cooked in a cezve, served thick and strong.",
+    image:
+      "https://images.unsplash.com/photo-1563889362-ec40f666fcf9?auto=format&fit=crop&w=800&q=80",
+  },
 ];
 
 export const dailyDeals = [
