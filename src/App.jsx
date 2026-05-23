@@ -22,7 +22,6 @@ function HomeContent() {
       <FeaturedSection />
       <MenuSection />
       <DailyDealsSection />
-      <Footer />
     </>
   );
 }
@@ -64,6 +63,7 @@ function App() {
       <div className="mx-auto max-w-[1400px] px-6 py-6 sm:px-10 lg:px-14">
         <Header />
         {renderRoute()}
+        <Footer />
       </div>
     </div>
   );

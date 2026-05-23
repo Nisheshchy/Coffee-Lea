@@ -7,7 +7,7 @@ export default function Footer() {
     <footer
       id="contact"
       className="mt-24 rounded-[3rem] bg-[#3b2519] px-8 py-12 text-[#f4e6dc] shadow-[0_40px_110px_rgba(46,24,12,0.28)]">
-      <div className="grid gap-8 lg:grid-cols-3">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
         <div className="space-y-4">
           <p className="text-sm uppercase tracking-[0.35em] text-[#b99d81]">
             Coffee Shop
@@ -26,6 +26,34 @@ export default function Footer() {
             <li>Espresso Masterpieces</li>
             <li>Iced Favorites</li>
             <li>Organic Beans</li>
+          </ul>
+        </div>
+
+        <div className="space-y-4">
+          <p className="text-sm uppercase tracking-[0.35em] text-[#b99d81]">
+            Quick Links
+          </p>
+          <ul className="space-y-3 text-sm leading-7 text-[#d9c4b6]">
+            <li>
+              <a href="#home" className="transition hover:text-[#f4e6dc]">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#featured" className="transition hover:text-[#f4e6dc]">
+                Menu
+              </a>
+            </li>
+            <li>
+              <a href="#/about" className="transition hover:text-[#f4e6dc]">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="#/stories" className="transition hover:text-[#f4e6dc]">
+                Stories
+              </a>
+            </li>
           </ul>
         </div>
 
