@@ -9,13 +9,20 @@ export default function HeroSection() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from(heroRef.current.querySelectorAll(".fade-up"), {
-        y: 32,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.15,
-        ease: "power3.out",
-      });
+      gsap.fromTo(
+        heroRef.current.querySelectorAll(".fade-up"),
+        {
+          y: 32,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          stagger: 0.15,
+          ease: "power3.out",
+        }
+      );
     }, heroRef);
 
     return () => ctx.revert();

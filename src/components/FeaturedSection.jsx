@@ -10,14 +10,21 @@ export default function FeaturedSection() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from(sectionRef.current.querySelectorAll(".fade-up-card"), {
-        y: 32,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.15,
-        delay: 0.3,
-        ease: "power3.out",
-      });
+      gsap.fromTo(
+        sectionRef.current.querySelectorAll(".fade-up-card"),
+        {
+          y: 32,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          stagger: 0.15,
+          delay: 0.3,
+          ease: "power3.out",
+        }
+      );
     }, sectionRef);
 
     return () => ctx.revert();
