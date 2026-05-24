@@ -11,6 +11,8 @@ import Footer from "./components/Footer";
 import StoriesList from "./pages/StoriesList";
 import StoryDetail from "./pages/StoryDetail";
 import About from "./pages/About";
+import Blog from "./pages/Blog";
+import BlogDetail from "./pages/BlogDetail";
 
 function HomeContent() {
   return (
@@ -45,6 +47,13 @@ function App() {
   const renderRoute = () => {
     if (route.startsWith("#/about")) {
       return <About />;
+    }
+
+    if (route.startsWith("#/blog")) {
+      const parts = route.replace("#", "").split("/");
+      const id = parts.length >= 3 ? parts[2] : null;
+      if (id) return <BlogDetail id={id} navigateTo={navigateTo} />;
+      return <Blog navigateTo={navigateTo} />;
     }
 
     if (route.startsWith("#/stories")) {
