@@ -54,6 +54,11 @@ export default function Footer() {
                 Stories
               </a>
             </li>
+            <li>
+              <a href="#/blog" className="transition hover:text-[#f4e6dc]">
+                Blog
+              </a>
+            </li>
           </ul>
         </div>
 

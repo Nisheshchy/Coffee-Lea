@@ -30,8 +30,8 @@ export default function Header() {
         <a href="#/stories" className="transition hover:text-[#f9e8dc]">
           Story
         </a>
-        <a href="#contact" className="transition hover:text-[#f9e8dc]">
-          Contact
+        <a href="#/blog" className="transition hover:text-[#f9e8dc]">
+          Blog
         </a>
         <a
           href="#order"
