@@ -30,7 +30,11 @@ export default function BlogDetail({ id, navigateTo }) {
   // Find related articles (same category if possible, excluding current one, up to 3)
   const relatedArticles = blogPosts
     .filter((p) => p.id !== story.id)
-    .sort((a, b) => (a.category === story.category ? -1 : 1))
+    .sort((a, b) => {
+      const aSame = a.category === story.category ? 1 : 0;
+      const bSame = b.category === story.category ? 1 : 0;
+      return bSame - aSame;
+    })
     .slice(0, 3);
 
   // Dynamic content formatter
